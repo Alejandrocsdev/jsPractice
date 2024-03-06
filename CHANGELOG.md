@@ -12,7 +12,9 @@
 
 04 add aside wheel event ([d2f5bf5](https://github.com/Alejandrocsdev/jsPractice/commit/d2f5bf5f94e6961cef2b9dd483ef915ff8c4d39c))
 
-06 add sec-1 html & css ([](https://github.com/Alejandrocsdev/jsPractice/commit/))
+06 add sec-1 html & css ([c00e37a](https://github.com/Alejandrocsdev/jsPractice/commit/c00e37a5d9d9913c8e3be7d5b2e3f6ac3e02c5ad))
+
+07 complete sec-1 Prime ([](https://github.com/Alejandrocsdev/jsPractice/commit/))
 
 ### Bug Fixes
 

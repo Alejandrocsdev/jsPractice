@@ -71,6 +71,7 @@ textarea.a-1 {
   height: 100px;
   margin: 10px;
   resize: none;
+  overflow: auto;
 }
 
 .err {
