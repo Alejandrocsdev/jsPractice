@@ -1,0 +1,45 @@
+:root {
+  --header-height: 50px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Fira Code', 'Roboto Mono', 'Roboto';
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  height: var(--header-height);
+  background-color: #cb997e;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 36px;
+}
+
+section {
+  height: 100vh;
+  padding-top: var(--header-height);
+  background-color: #ffe8d6;
+}
+
+section:nth-child(odd) {
+  background-color: #ddbea9;
+}
+
+/* ALL SECTIONS */
+
+.task-title {
+  font-size: 24px;
+  text-align: center;
+  margin: 10px 0;
+}
