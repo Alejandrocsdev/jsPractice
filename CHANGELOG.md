@@ -12,6 +12,8 @@
 
 04 add aside wheel event ([d2f5bf5](https://github.com/Alejandrocsdev/jsPractice/commit/d2f5bf5f94e6961cef2b9dd483ef915ff8c4d39c))
 
+06 add sec-1 html & css ([](https://github.com/Alejandrocsdev/jsPractice/commit/))
+
 ### Bug Fixes
 
-05 error when scroll into top & bottom ([](https://github.com/Alejandrocsdev/jsPractice/commit/))
+05 error when scroll into top & bottom ([90250a9](https://github.com/Alejandrocsdev/jsPractice/commit/90250a941d94e64d0f9bd60a79f4b21f7e7534d4))
