@@ -9,14 +9,15 @@ function init() {
   // <<<EVENT LISTENER>>>
   aside.addEventListener('click', asideClick)
   document.addEventListener('keydown', asideKey)
+  document.addEventListener('wheel', asideWheel)
 }
 
 init()
 
 // <<<EVENT FUNCTION>>>
-function asideClick(element) {
+function asideClick(event) {
   link.forEach((e) => e.classList.remove('clicked'))
-  const target = element.target
+  const target = event.target
   const id = target.dataset.id
   const sec = document.querySelector(`#${id}`)
   if (target.classList.contains('link')) {
@@ -24,21 +25,35 @@ function asideClick(element) {
     sec.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 }
-function asideKey(element) {
+function asideKey(event) {
+  if (event.key === 'ArrowDown') {
+    handleScroll('down')
+  } else if (event.key === 'ArrowUp') {
+    handleScroll('up')
+  }
+}
+function asideWheel(event) {
+  if (event.deltaY > 0) {
+    handleScroll('down')
+  } else if (event.deltaY < 0) {
+    handleScroll('up')
+  }
+}
+
+// <<<OTHER FUNCTION>>>
+function handleScroll(event) {
   const last = section.length
   const clicked = aside.querySelector('.clicked')
   const id = clicked.dataset.id
   let targetId = Number(id.split('-')[1])
-  if (element.key === 'ArrowDown' && clicked.dataset.id !== `sec-${last}`) {
+  if (event === 'down' && clicked.dataset.id !== `sec-${last}`) {
     targetId = `sec-${targetId + 1}`
-    keySwitch(clicked, targetId)
-  } else if (element.key === 'ArrowUp' && clicked.dataset.id !== 'sec-1') {
+  } else if (event === 'up' && clicked.dataset.id !== 'sec-1') {
     targetId = `sec-${targetId - 1}`
-    keySwitch(clicked, targetId)
   }
+  scroll(clicked, targetId)
 }
-// <<<OTHER FUNCTION>>>
-function keySwitch(clicked, targetId) {
+function scroll(clicked, targetId) {
   clicked.classList.remove('clicked')
   const targetLink = aside.querySelector(`[data-id="${targetId}"]`)
   targetLink.classList.toggle('clicked')
