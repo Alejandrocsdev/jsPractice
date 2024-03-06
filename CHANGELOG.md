@@ -10,4 +10,8 @@
 
 03 add aside keydown event ([d3b35d5](https://github.com/Alejandrocsdev/jsPractice/commit/d3b35d587fac34f5f311b25c165fe1e600fd3215))
 
-04 add aside wheel event ([](https://github.com/Alejandrocsdev/jsPractice/commit/))
+04 add aside wheel event ([d2f5bf5](https://github.com/Alejandrocsdev/jsPractice/commit/d2f5bf5f94e6961cef2b9dd483ef915ff8c4d39c))
+
+### Bug Fixes
+
+05 error when scroll into top & bottom ([](https://github.com/Alejandrocsdev/jsPractice/commit/))

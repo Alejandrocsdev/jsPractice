@@ -32,6 +32,7 @@ function asideKey(event) {
     handleScroll('up')
   }
 }
+
 function asideWheel(event) {
   if (event.deltaY > 0) {
     handleScroll('down')
@@ -40,19 +41,22 @@ function asideWheel(event) {
   }
 }
 
-// <<<OTHER FUNCTION>>>
-function handleScroll(event) {
+function handleScroll(type) {
   const last = section.length
   const clicked = aside.querySelector('.clicked')
   const id = clicked.dataset.id
   let targetId = Number(id.split('-')[1])
-  if (event === 'down' && clicked.dataset.id !== `sec-${last}`) {
+
+  if (type === 'down' && id !== `sec-${last}`) {
     targetId = `sec-${targetId + 1}`
-  } else if (event === 'up' && clicked.dataset.id !== 'sec-1') {
+    scroll(clicked, targetId)
+  } else if (type === 'up' && id !== 'sec-1') {
     targetId = `sec-${targetId - 1}`
+    scroll(clicked, targetId)
   }
-  scroll(clicked, targetId)
 }
+
+// <<<OTHER FUNCTION>>>
 function scroll(clicked, targetId) {
   clicked.classList.remove('clicked')
   const targetLink = aside.querySelector(`[data-id="${targetId}"]`)
