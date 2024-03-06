@@ -1,10 +1,12 @@
 :root {
   --header-height: 50px;
+  --aside-margin: 30px;
 }
 
 * {
   box-sizing: border-box;
   font-family: 'Fira Code', 'Roboto Mono', 'Roboto';
+  overflow: hidden;
 }
 
 body {
@@ -24,6 +26,48 @@ header {
 
 .header-title {
   font-size: 36px;
+}
+
+aside {
+  width: 80px;
+  height: calc(100vh - var(--header-height) - var(--aside-margin) * 2);
+  position: fixed;
+  top: calc(var(--header-height) + var(--aside-margin));
+  left: var(--aside-margin);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.link {
+  width: 60px;
+  padding: 6px 0;
+  color: #9b2226;
+  background-color: #e76f51;
+  border-radius: 6px;
+  border: 2px solid #9b2226;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.4s;
+  appearance: none;
+}
+
+.link:hover {
+  color: #e76f51;
+  background-color: #9b2226;
+  cursor: pointer;
+}
+
+.link:focus-visible {
+  outline: none;
+}
+
+.clicked {
+  color: #e76f51;
+  background-color: #9b2226;
 }
 
 section {
