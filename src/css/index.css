@@ -73,11 +73,11 @@ aside {
 section {
   height: 100vh;
   padding-top: var(--header-height);
-  background-color: #ffe8d6;
+  background-color: #d5bdaf;
 }
 
 section:nth-child(odd) {
-  background-color: #ddbea9;
+  background-color: #ddb892;
 }
 
 /* ALL SECTIONS */

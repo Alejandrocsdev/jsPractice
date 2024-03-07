@@ -1,0 +1,57 @@
+.c-2 {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.i-2 {
+  width: 530px;
+  background-color: bisque;
+  resize: none;
+}
+
+.i-2::placeholder {
+  font-size: 30px;
+  color: #999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.a-2 {
+  width: 530px;
+  height: 23px;
+  margin: 25px 0;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  caret-color: transparent;
+  resize: none;
+}
+
+.a-2:focus {
+  outline: none;
+}
+
+.a-2::placeholder {
+  color: white;
+}
+
+.button-c-2 {
+  width: 530px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copy-btn {
+  width: 100%;
+  margin-right: 10px;
+}
+
+.reset-btn {
+  width: 100%;
+  margin-left: 10px;
+}

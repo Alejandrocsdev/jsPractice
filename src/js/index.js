@@ -5,7 +5,7 @@ const section = document.querySelectorAll('section')
 
 function init() {
   // return to top when refresh
-  document.body.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  // document.body.scrollIntoView({ behavior: 'smooth', block: 'start' })
   // <<<EVENT LISTENER>>>
   aside.addEventListener('click', asideClick)
   document.addEventListener('keydown', asideKey)
