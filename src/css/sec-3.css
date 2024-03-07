@@ -1,0 +1,82 @@
+.c-3 {
+  height: calc(100vh - 102px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.opponent {
+  width: 200px;
+  height: 60px;
+  background-color: #9a8c98;
+  border-radius: 16px;
+  border: 2px solid #22223b;
+  position: absolute;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player {
+  width: 200px;
+  height: 60px;
+  background-color: #9a8c98;
+  border-radius: 16px;
+  border: 2px solid #22223b;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.guess-btn {
+  width: 48px;
+  aspect-ratio: 1/1;
+  background-color: #b0c4b1;
+  border: 2px solid #22223b;
+  font-size: 32px;
+  font-weight: 700;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guess-btn:hover {
+  background-color: #c9ada7;
+  cursor: pointer;
+}
+
+.start-btn {
+  width: 160px;
+  background-color: #9a8c98;
+  padding: 6px 10px;
+  border-radius: 16px;
+  border: 2px solid #22223b;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 51px;
+}
+
+.start-btn:hover {
+  background-color: #c9ada7;
+  cursor: pointer;
+}
+
+.countDown,
+.result-text {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 51px;
+}
+
+.tie {
+  background-color: #fca311;
+}
+
+.tie:hover {
+  background-color: #fca311;
+}

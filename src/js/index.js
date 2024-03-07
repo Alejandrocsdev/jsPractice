@@ -5,7 +5,7 @@ const section = document.querySelectorAll('section')
 
 function init() {
   // return to top when refresh
-  // document.body.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  document.body.scrollIntoView({ behavior: 'smooth', block: 'start' })
   // <<<EVENT LISTENER>>>
   aside.addEventListener('click', asideClick)
   document.addEventListener('keydown', asideKey)
@@ -43,6 +43,7 @@ function asideWheel(event) {
 
 function handleScroll(type) {
   const last = section.length
+  console.log(last)
   const clicked = aside.querySelector('.clicked')
   const id = clicked.dataset.id
   let targetId = Number(id.split('-')[1])

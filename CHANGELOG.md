@@ -18,7 +18,9 @@
 
 08 add sec-2 html & css ([c8da08c](https://github.com/Alejandrocsdev/jsPractice/commit/c8da08cfbb4806e3246a73bfa7cc8f72af0a1fbc))
 
-09 complete sec-2 Sha256 ([](https://github.com/Alejandrocsdev/jsPractice/commit/))
+09 complete sec-2 Sha256 ([7d5f914](https://github.com/Alejandrocsdev/jsPractice/commit/7d5f9145066d09082d17744e9858b6eb46a7a75c))
+
+10 complete sec-3 Guess ([](https://github.com/Alejandrocsdev/jsPractice/commit/))
 
 ### Bug Fixes
 

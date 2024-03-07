@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/sec-1.css">
   <link rel="stylesheet" href="../css/sec-2.css">
+  <link rel="stylesheet" href="../css/sec-3.css">
 </head>
 
 <!-- 
@@ -42,7 +43,8 @@ r => reset
   <aside>
     <button class="link clicked" data-id="sec-1">Prime</button>
     <button class="link" data-id="sec-2">Sha256</button>
-    <button class="link" data-id="sec-3">...</button>
+    <button class="link" data-id="sec-3">Guess</button>
+    <button class="link" data-id="sec-4">...</button>
   </aside>
   <section id="sec-1">
     <h1 class="title">Prime</h1>
@@ -93,21 +95,10 @@ r => reset
     <h1 class="title">Sha256</h1>
     <div class="c-2">
       <div class="input-c-2">
-        <textarea
-        class="i-2"
-          placeholder="Input"
-          cols="30"
-          rows="10"
-        ></textarea>
+        <textarea class="i-2" placeholder="Input" cols="30" rows="10"></textarea>
       </div>
       <div>
-        <textarea
-        class="a-2"
-          readonly
-          placeholder="Output"
-          cols="30"
-          rows="10"
-        ></textarea>
+        <textarea class="a-2" readonly placeholder="Output" cols="30" rows="10"></textarea>
       </div>
       <div class="button-c-2">
         <button class="copy-btn">COPY</button>
@@ -116,11 +107,23 @@ r => reset
     </div>
   </section>
   <section id="sec-3">
+    <h1 class="title">Guess</h1>
+    <div class="c-3">
+      <div id="opponent"></div>
+      <button class="start-btn">Start</button>
+      <h1 class="countDown"></h1>
+      <h1 class="result-text"></h1>
+      <div id="player"></div>
+    </div>
+  </section>
+  <section id="sec-4">
     <h1 class="title">...</h1>
   </section>
+  <script src="https://kit.fontawesome.com/6fb9682f78.js" crossorigin="anonymous"></script>
   <script src="../js/index.js"></script>
   <script src="../js/sec-1.js"></script>
   <script src="../js/sec-2.js"></script>
+  <script src="../js/sec-3.js"></script>
 </body>
 
 </html>
