@@ -20,7 +20,7 @@
 
 09 complete sec-2 Sha256 ([7d5f914](https://github.com/Alejandrocsdev/jsPractice/commit/7d5f9145066d09082d17744e9858b6eb46a7a75c))
 
-10 complete sec-3 Guess ([](https://github.com/Alejandrocsdev/jsPractice/commit/))
+10 complete sec-3 Guess ([e149cfa](https://github.com/Alejandrocsdev/jsPractice/commit/e149cfa946913d390bba2de53ab35ba80d27d23e))
 
 ### Bug Fixes
 
