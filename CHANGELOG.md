@@ -16,7 +16,9 @@
 
 07 complete sec-1 Prime ([edee0dc](https://github.com/Alejandrocsdev/jsPractice/commit/edee0dc35aa1f35ceab8d508700c1b294b203c1f))
 
-08 add sec-2 html & css ([](https://github.com/Alejandrocsdev/jsPractice/commit/))
+08 add sec-2 html & css ([c8da08c](https://github.com/Alejandrocsdev/jsPractice/commit/c8da08cfbb4806e3246a73bfa7cc8f72af0a1fbc))
+
+09 complete sec-2 Sha256 ([](https://github.com/Alejandrocsdev/jsPractice/commit/))
 
 ### Bug Fixes
 

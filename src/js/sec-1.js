@@ -17,7 +17,6 @@ function init() {
 init()
 
 // <<<EVENT FUNCTION>>>
-
 function task1(event) {
   const target = event.target
   const input = checkPrime.querySelector('.i-1')
